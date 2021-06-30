@@ -1,8 +1,13 @@
 import React, { FC } from "react";
 import { Text } from "react-native";
+import { Wrapper } from "../wrapper/wrapper";
 
 export interface WykonamProps {}
 
 export const Wykonam: FC<WykonamProps> = ({}) => {
-  return <Text>Wykonam</Text>;
+  return (
+    <Wrapper>
+      <Text>Wykonam</Text>
+    </Wrapper>
+  );
 };
