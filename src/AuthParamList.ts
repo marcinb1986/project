@@ -3,7 +3,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 export type AuthParamList = {
   Wykonam: undefined;
   Zlecę: undefined;
-  Moje: undefined;
+  Wiadomości: undefined;
   Więcej: undefined;
 };
 

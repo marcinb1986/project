@@ -1,10 +1,6 @@
 import React, { FC } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { Wykonam } from "./components/wykonam/wykonam";
-import { Zlece } from "./components/zlece/zlece";
-import { Wiecej } from "./components/wiecej/wiecej";
-import { Moje_Ogloszenia } from "./components/moje-ogloszenia/moje-ogloszenia";
 import { AuthParamList } from "./AuthParamList";
 import { AppTabs } from "./AppTabs";
 
