@@ -3,4 +3,5 @@ export type AppParamList = {
   Zlecę: undefined;
   Wiadomości: undefined;
   Więcej: undefined;
+  WiecejDrawer: undefined;
 };
