@@ -3,6 +3,6 @@ import { Text } from "react-native";
 
 export interface WykonamProps {}
 
-export const Wykonam: FC<WykonamProps> = ({}) => {
-  return <Text>Wykonam</Text>;
+export const Wiadomosci: FC<WykonamProps> = ({}) => {
+  return <Text>Wiadomości</Text>;
 };
