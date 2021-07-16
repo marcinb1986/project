@@ -14,23 +14,16 @@ import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
-
-export interface BottomTabsProps {
-  activeColor: string;
-  inactiveColor: string;
-}
+import { CustomHeader } from "../CustomHeader";
 
 const Tabs = createBottomTabNavigator<BottomTabsParamList>();
 
-export const activeColor = "red";
-export const inactiveColor = "blue";
-
-export const BottomTabs: FC<BottomTabsProps> = ({
-  activeColor,
-  inactiveColor,
-}) => {
+export const BottomTabs: FC = ({}) => {
+  const activeColor = "red";
+  const inactiveColor = "blue";
   return (
     <Tabs.Navigator
+      // tabBar={(props) => <CustomHeader {...props} />}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -75,7 +68,7 @@ export const BottomTabs: FC<BottomTabsProps> = ({
         inactiveTintColor: "gray",
       }}
     >
-      <Tabs.Screen name="Wykonam" component={Wykonam}></Tabs.Screen>
+      <Tabs.Screen name="Wykonam" component={Wykonam} />
       <Tabs.Screen name="Zlecę" component={Zlece}></Tabs.Screen>
       <Tabs.Screen name="Wiadomości" component={Wiadomosci}></Tabs.Screen>
       <Tabs.Screen name="Dodaj" component={Dodaj}></Tabs.Screen>
