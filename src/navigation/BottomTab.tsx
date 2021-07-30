@@ -7,14 +7,10 @@ import { Wiadomosci } from "../components/wiadomosci/wiadomosci";
 import { Wykonam } from "../components/wykonam/wykonam";
 import { Zlece } from "../components/zlece/zlece";
 
-import { DrawerActions } from "@react-navigation/native";
-import { WiecejDrawerNavigation } from "./DrawerNavigation";
-
 import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
-import { CustomHeader } from "../CustomHeader";
 
 const Tabs = createBottomTabNavigator<BottomTabsParamList>();
 
@@ -23,7 +19,6 @@ export const BottomTabs: FC = ({}) => {
   const inactiveColor = "blue";
   return (
     <Tabs.Navigator
-      // tabBar={(props) => <CustomHeader {...props} />}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -69,18 +64,9 @@ export const BottomTabs: FC = ({}) => {
       }}
     >
       <Tabs.Screen name="Wykonam" component={Wykonam} />
-      <Tabs.Screen name="Zlecę" component={Zlece}></Tabs.Screen>
-      <Tabs.Screen name="Wiadomości" component={Wiadomosci}></Tabs.Screen>
-      <Tabs.Screen name="Dodaj" component={Dodaj}></Tabs.Screen>
-      <Tabs.Screen
-        name="Więcej"
-        component={WiecejDrawerNavigation}
-        listeners={({ navigation }) => ({
-          tabPress: (e) => {
-            navigation.dispatch(DrawerActions.openDrawer());
-          },
-        })}
-      ></Tabs.Screen>
+      <Tabs.Screen name="Zlecę" component={Zlece} />
+      <Tabs.Screen name="Wiadomości" component={Wiadomosci} />
+      <Tabs.Screen name="Dodaj" component={Dodaj} />
     </Tabs.Navigator>
   );
 };

@@ -3,5 +3,4 @@ export type BottomTabsParamList = {
   Zlecę: undefined;
   Wiadomości: undefined;
   Dodaj: undefined;
-  Więcej: undefined;
 };
