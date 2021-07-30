@@ -25,7 +25,7 @@ export const CustomHeader: FC<CustomHeaderProps> = ({ navigation }) => {
       >
         <Image
           style={{ width: 20, height: 20, tintColor: "red" }}
-          source={require("../src/images/menu (1).png")}
+          source={require("../images/menu (1).png")}
           resizeMode="contain"
         ></Image>
       </TouchableOpacity>

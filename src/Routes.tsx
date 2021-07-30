@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { DrawerActions, NavigationContainer } from "@react-navigation/native";
 import { BottomTabs } from "./navigation/BottomTab";
 import { createStackNavigator } from "@react-navigation/stack";
-import { CustomHeader } from "./CustomHeader";
+import { CustomHeader } from "./navigation/CustomHeader";
 import { Image, TouchableOpacity } from "react-native";
 import { DrawerNavigation } from "./navigation/DrawerNavigation";
 
