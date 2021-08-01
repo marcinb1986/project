@@ -14,7 +14,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 const Tabs = createBottomTabNavigator<BottomTabsParamList>();
 
-export const BottomTabs: FC = ({}) => {
+export const BottomTabs = ({}) => {
   const activeColor = "red";
   const inactiveColor = "blue";
   return (

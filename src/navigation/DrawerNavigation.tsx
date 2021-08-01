@@ -21,7 +21,7 @@ export const DrawerNavigation: FC<WiecejDrawerProps> = ({
 }) => {
   return (
     <Drawer.Navigator drawerContent={(props) => <DrawerMenu {...props} />}>
-      <Drawer.Screen name="Home" component={BottomTabs} />
+      <Drawer.Screen name="BottomTab" component={BottomTabs} />
       <Drawer.Screen name="Profil" component={Profil} />
       <Drawer.Screen name="MojeOgłoszenia" component={Moje_Ogloszenia} />
       <Drawer.Screen name="MojeAkcje" component={MojeAkcje} />

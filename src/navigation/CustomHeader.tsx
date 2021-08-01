@@ -20,7 +20,7 @@ export const CustomHeader: FC<CustomHeaderProps> = ({ navigation }) => {
       }}
     >
       <TouchableOpacity
-        onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
+        onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
         style={{ flex: 1, justifyContent: "center" }}
       >
         <Image

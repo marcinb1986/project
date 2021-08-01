@@ -1,5 +1,5 @@
 export type DrawerParamList = {
-  Home: undefined;
+  BottomTab: undefined;
   Profil: undefined;
   MojeOgłoszenia: undefined;
   MojeAkcje: undefined;

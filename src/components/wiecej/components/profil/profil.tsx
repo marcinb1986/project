@@ -1,8 +1,12 @@
 import React, { FC } from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 export interface ProfilProps {}
 
 export const Profil: FC<ProfilProps> = ({}) => {
-  return <Text>Profil</Text>;
+  return (
+    <View>
+      <Text>Profil</Text>
+    </View>
+  );
 };
